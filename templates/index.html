@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MNIST手写数字识别演示</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.10.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+<body>
+<div class="container">
+    <h1>MNIST</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <p>请手写一个数字!</p>
+            <canvas id="main"></canvas>
+            <p>
+                <button id="clear" class="btn btn-default">清除</button>
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <p>输入:</p>
+            <canvas id="input" style="border:1px solid" width="140" height="140"></canvas>
+            <hr>
+            <p>输出:</p>
+            <table id="output" class="table">
+                <tr>
+                    <th class="col-md-1"></th>
+                    <th class="col-md-2">回归</th>
+                    <th class="col-md-2">卷积</th>
+                </tr>
+                <tr>
+                    <th>0</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>9</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
