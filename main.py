@@ -5,7 +5,7 @@ from flask import Flask, jsonify, render_template, request
 from mnist import model
 
 x = tf.placeholder("float", [None, 784])
-
+#
 sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True, log_device_placement=True))
 
 # restore trained data
